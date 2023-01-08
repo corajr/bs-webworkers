@@ -9,23 +9,22 @@
         "webworkers"
     ],
     "jest": {
-        "setupFiles": [
-            "/Users/davidgomes/src/webworkers-bs/setup.js"
-        ]
+        "testURL": "http://localhost"
     },
     "scripts": {
-        "build": "bsb -make-world",
-        "start": "bsb -make-world -w",
-        "clean": "bsb -clean-world",
+        "build": "rescript build",
+        "start": "rescript build -w",
+        "clean": "rescript clean",
         "example": "cd example && ws",
         "test": "jest"
     },
     "bugs": "https://github.com/davidgomes/bs-webworkers/issues",
     "homepage": "https://github.com/davidgomes/bs-webworkers",
     "devDependencies": {
-        "bs-jest": "0.2.0",
+        "@glennsl/rescript-jest": "0.9.2",
         "bs-platform": "2.1.0",
         "jest": "22.0.4",
+        "rescript": "^10.0.0",
         "local-web-server": "^2.3.0"
     },
     "repository": {
